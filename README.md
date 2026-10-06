@@ -34,3 +34,15 @@ A `CHECK` constraint ensures that a lease end date must occur after its start da
 
 ```sql
 CHECK (EndDate > StartDate)
+
+## Database ERD
+
+The Entity Relationship Diagram below shows the structure of the database and the relationships between Properties, Tenants, Lease Agreements, and Maintenance Requests.
+
+![Property Management Database ERD](ERD%20-%20Property%20Management.png)
+
+### Stored Procedure Results
+
+The stored procedure can dynamically retrieve properties based on optional filtering criteria, including city, Property ID, or no filter.
+
+![Stored Procedure Results](stored-procedure-results.png)
